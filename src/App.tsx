@@ -29,16 +29,39 @@ class Board extends React.Component {
     squares[i] = this.state.xIndex ? 'X' : 'O'
     this.setState({
       squares:squares,
-      xIndex:!this.state.xIndex
+      xIndex:!this.state.xIndex,
     });
   }
 
   renderSquare(i:number) {
     return <Square
+             key={i}
              onClick={()=>this.handleClick(i)}
              value={this.state.squares[i]}
            />;
   }
+
+  boardRowContent(index:number):any[]{
+    let date = []
+
+    for(let i=index - 3;i < index;i++){
+      date.push(this.renderSquare(i))
+    }
+    return date
+  }
+
+  boardRow():any[]{
+    let date = []
+    for(let i=1;i<=3;i++){
+      date.push(
+        <div key={i} className="board-row">
+          {this.boardRowContent(3 * i)}
+        </div>
+      )
+    }
+    return date
+  }
+
   render() {
     const winner = calculateWinner(this.state.squares)
     let status:string
@@ -50,21 +73,7 @@ class Board extends React.Component {
     return (
       <div>
         <div className="status">{status}</div>
-        <div className="board-row">
-          {this.renderSquare(0)}
-          {this.renderSquare(1)}
-          {this.renderSquare(2)}
-        </div>
-        <div className="board-row">
-          {this.renderSquare(3)}
-          {this.renderSquare(4)}
-          {this.renderSquare(5)}
-        </div>
-        <div className="board-row">
-          {this.renderSquare(6)}
-          {this.renderSquare(7)}
-          {this.renderSquare(8)}
-        </div>
+        {this.boardRow()}
       </div>
     )
   }
