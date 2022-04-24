@@ -1,0 +1,22 @@
+{
+  "name":"@elonehoo/tic-tac-toe",
+  "packageManager": "pnpm@6.32.9",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "vite  --port 3333 --open",
+    "build": "vite build",
+    "preview": "vite preview  --port 8766 --open"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "pnpm":"^6.32.9",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.5"
+  }
+}
