@@ -1,6 +1,6 @@
 {
   "name":"@elonehoo/tic-tac-toe",
-  "packageManager": "pnpm@6.32.9",
+  "packageManager": "pnpm@6.34.0",
   "version": "0.0.1",
   "scripts": {
     "dev": "vite  --port 3333 --open",
