@@ -1,10 +1,10 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   '@types/react': 18.0.19
-  '@types/react-dom': 18.0.6
+  '@types/react-dom': 18.0.9
   '@vitejs/plugin-react': 2.1.0
-  pnpm: 6.34.0
+  pnpm: 7.11.0
   react: 18.2.0
   react-dom: 18.2.0
   typescript: 4.8.3
@@ -16,9 +16,9 @@ dependencies:
 
 devDependencies:
   '@types/react': 18.0.19
-  '@types/react-dom': 18.0.6
-  '@vitejs/plugin-react': 2.1.0_vite@2.9.15
-  pnpm: 6.34.0
+  '@types/react-dom': 18.0.9
+  '@vitejs/plugin-react': 2.1.0_vite@3.1.0
+  pnpm: 7.11.0
   typescript: 4.8.3
   vite: 3.1.0
 
@@ -196,6 +196,8 @@ packages:
     resolution: {integrity: sha512-dgXcIfMuQ0kgzLB2b9tRZs7TTFFaGM2AbtA4fJgUUYukzGH4jwsS7hzQHEGs67jdehpm22vkgKwvbU+aEflgwg==}
     engines: {node: '>=6.0.0'}
     hasBin: true
+    dependencies:
+      '@babel/types': 7.18.13
     dev: true
 
   /@babel/plugin-syntax-jsx/7.18.6_@babel+core@7.18.13:
@@ -331,8 +333,8 @@ packages:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
     dev: true
 
-  /@types/react-dom/18.0.6:
-    resolution: {integrity: sha512-/5OFZgfIPSwy+YuIBP/FgJnQnsxhZhjjrnxudMddeblOouIodEQ75X14Rr4wGSG/bknL+Omy9iWlLo1u/9GzAA==}
+  /@types/react-dom/18.0.9:
+    resolution: {integrity: sha512-qnVvHxASt/H7i+XG1U1xMiY5t+IHcPGUK7TDMDzom08xa7e86eCeKOiLZezwCKVxJn6NEiiy2ekgX8aQssjIKg==}
     dependencies:
       '@types/react': 18.0.19
     dev: true
@@ -349,7 +351,7 @@ packages:
     resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
     dev: true
 
-  /@vitejs/plugin-react/2.1.0_vite@2.9.15:
+  /@vitejs/plugin-react/2.1.0_vite@3.1.0:
     resolution: {integrity: sha512-am6rPyyU3LzUYne3Gd9oj9c4Rzbq5hQnuGXSMT6Gujq45Il/+bunwq3lrB7wghLkiF45ygMwft37vgJ/NE8IAA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -362,7 +364,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.18.6_@babel+core@7.18.13
       magic-string: 0.26.3
       react-refresh: 0.14.0
-      vite: 2.9.15
+      vite: 3.1.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -745,9 +747,9 @@ packages:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
     dev: true
 
-  /pnpm/6.34.0:
-    resolution: {integrity: sha512-K79DAT5WtGjrUyLtxAyehtN8uy5cXkzT1v+7RIJ3gygCffoLaLlBoG5gcfjfnX7oZH5rxznv/v8tlMIMfZyzTA==}
-    engines: {node: '>=12.17'}
+  /pnpm/7.11.0:
+    resolution: {integrity: sha512-cxh4TfCE8L4ZbLBN72kTGKTYP7X08nrIzoQ2rQCKihAcIHAdNIgsk4bEJyE1xHjE+bNJt9skwr7aJv3LpvUawQ==}
+    engines: {node: '>=14.6'}
     hasBin: true
     dev: true
 
@@ -781,15 +783,6 @@ packages:
     dependencies:
       loose-envify: 1.4.0
     dev: false
-
-  /resolve/1.22.0:
-    resolution: {integrity: sha512-Hhtrw0nLeSrFQ7phPp4OOcVjLPIeMnRlr5mcnVuMe7M/7eBn98A3hmFRLoFo3DLZkivSYwhRUJTyPyWAk56WLw==}
-    hasBin: true
-    dependencies:
-      is-core-module: 2.9.0
-      path-parse: 1.0.7
-      supports-preserve-symlinks-flag: 1.0.0
-    dev: true
 
   /resolve/1.22.1:
     resolution: {integrity: sha512-nBpuuYuY5jFsli/JIs1oldw6fOQCBioohqWZg/2hiaOybXOft4lonv85uDOKXdf8rhyK159cxU5cDcK/NKk8zw==}
